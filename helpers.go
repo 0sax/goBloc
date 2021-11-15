@@ -83,7 +83,7 @@ func makeRequest(
 		return err
 	}
 
-	fmt.Printf("\nResponse Body:\n%v", string(b))
+	fmt.Printf("\nResponse Body:\n%v\n", string(b))
 
 	err = json.Unmarshal(b, responseTarget)
 	if err != nil {
